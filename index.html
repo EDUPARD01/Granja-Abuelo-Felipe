@@ -401,19 +401,28 @@
 
     <script>
         // Initialize Vanta.js background
-       VANTA.FOG({
-  el: "#vanta-bg",
-  highlightColor: 0x3b82f6,
-  midtoneColor: 0x004d0c,
-  lowlightColor: 0x11372e,
-  baseColor: 0xffffff,
-  blurFactor: 0.6,
-  speed: 1.0,
-            })
-
-        
-
-
+       // Initialize Vanta.js background
+        VANTA.BIRDS({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x004d0c,
+            color1: 0x3b82f6,
+            color2: 0x11372e,
+            colorMode: "lerp",
+            birdSize: 1.20,
+            wingSpan: 25.00,
+            speedLimit: 3.00,
+            separation: 20.00,
+            alignment: 20.00,
+            cohesion: 20.00,
+            quantity: 3.00
+        });
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
