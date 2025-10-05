@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - GRANJA ABUELO FELIPE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .story-card {
+            transition: all 0.3s ease;
+        }
+        .story-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="font-body bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">🐐</span>
+                    </div>
+                    <div>
+                        <h1 class="font-display text-2xl font-bold text-gray-800">GRANJA ABUELO FELIPE</h1>
+                        <p class="text-sm text-gray-600">Leche de Cabra Artesanal</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium transition-colors">Inicio</a>
+                    <a href="index.html#productos" class="text-gray-700 hover:text-green-600 font-medium transition-colors">Productos</a>
+                    <a href="#nosotros" class="text-green-600 font-medium">Nosotros</a>
+                    <a href="index.html#contacto" class="text-gray-700 hover:text-green-600 font-medium transition-colors">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-24 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center text-white">
+                <h1 class="font-display text-5xl font-bold mb-6">Nuestra Historia</h1>
+                <p class="text-xl text-green-100 max-w-3xl mx-auto leading-relaxed">
+                    Más de dos décadas dedicadas a la producción artesanal de leche de cabra y sus derivados, 
+                    manteniendo viva la tradición familiar y la calidad que nos caracteriza.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="font-display text-4xl font-bold text-gray-800 mb-6">La Tradición Continúa</h2>
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        Desde nuestros inicios, hemos mantenido el compromiso de producir los mejores productos lácteos de cabra, 
+                        respetando las técnicas tradicionales y cuidando cada detalle del proceso.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-16 fade-in">
+                    <div>
+                        <img src="farm-hero.png" alt="Granja Abuelo Felipe" class="w-full h-96 object-cover rounded-2xl shadow-lg">
+                    </div>
+                    <div>
+                        <h3 class="font-display text-3xl font-bold text-gray-800 mb-4">Nuestra Granja</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Ubicada en las mejores tierras de Paraguay, nuestra granja cuenta con pastos naturales de alta calidad, 
+                            ideales para la crianza de cabras lecheras. Nuestros animales son tratados con el máximo cuidado y respeto, 
+                            garantizando su bienestar y la calidad de la leche que producen.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Creemos firmemente en la agricultura sostenible y en el cuidado del medio ambiente, 
+                            por lo que implementamos prácticas eco-amigables en todas nuestras operaciones.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Values Cards -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="story-card bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl text-center fade-in">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">🌱</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-gray-800 mb-3">Calidad Natural</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Productos 100% naturales, sin aditivos ni conservantes, elaborados con ingredientes 
+                            frescos de nuestra propia granja.
+                        </p>
+                    </div>
+
+                    <div class="story-card bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl text-center fade-in">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">👨‍👩‍👧‍👦</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-gray-800 mb-3">Tradición Familiar</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Más de 20 años de experiencia transmitiendo los secretos de la elaboración artesanal 
+                            de productos lácteos de cabra.
+                        </p>
+                    </div>
+
+                    <div class="story-card bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl text-center fade-in">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-white text-2xl">💚</span>
+                        </div>
+                        <h3 class="font-display text-xl font-bold text-gray-800 mb-3">Compromiso Social</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Apoyamos a la comunidad local y promovemos el consumo de productos saludables 
+                            y sostenibles para todas las familias.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Process Section -->
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-12 rounded-3xl fade-in">
+                    <h3 class="font-display text-3xl font-bold text-gray-800 text-center mb-8">Nuestro Proceso Artesanal</h3>
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white text-3xl">🥛</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Ordeño</h4>
+                            <p class="text-gray-600 text-sm">
+                                Ordeño manual diario con el máximo cuidado e higiene
+                            </p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white text-3xl">🧪</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Control</h4>
+                            <p class="text-gray-600 text-sm">
+                                Análisis de calidad para garantizar la pureza y frescura
+                            </p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white text-3xl">👨‍🍳</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Elaboración</h4>
+                            <p class="text-gray-600 text-sm">
+                                Proceso artesanal siguiendo recetas tradicionales
+                            </p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white text-3xl">📦</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 mb-2">Entrega</h4>
+                            <p class="text-gray-600 text-sm">
+                                Empaque cuidadoso y entrega directa a tu hogar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-br from-green-600 to-blue-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-display text-3xl font-bold text-white mb-4">¿Quieres Probar Nuestros Productos?</h2>
+            <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+                No esperes más para disfrutar de la calidad y sabor único de nuestros productos artesanales de cabra.
+            </p>
+            <a href="index.html#productos" 
+               class="bg-white text-green-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-green-50 transition-all duration-300 transform hover:scale-105 inline-block">
+                Ver Productos
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">🐐</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-xl font-bold">GRANJA ABUELO FELIPE</h3>
+                            <p class="text-gray-400 text-sm">Leche de Cabra Artesanal</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        Productores de leche de cabra y derivados artesanales desde hace más de 20 años, 
+                        comprometidos con la calidad y la tradición familiar.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-display text-lg font-bold mb-4">Información de Contacto</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-green-400">📱</span>
+                            <span>+595 976 463756</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-blue-400">📍</span>
+                            <span>Granja Abuelo Felipe - Paraguay</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span class="text-yellow-400">🕒</span>
+                            <span>Lunes a Sábado: 6:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-display text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <div class="space-y-2">
+                        <a href="index.html" class="block text-gray-300 hover:text-green-400 transition-colors">Inicio</a>
+                        <a href="index.html#productos" class="block text-gray-300 hover:text-green-400 transition-colors">Productos</a>
+                        <a href="#nosotros" class="block text-green-400">Nosotros</a>
+                        <a href="index.html#contacto" class="block text-gray-300 hover:text-green-400 transition-colors">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Granja Abuelo Felipe. Todos los derechos reservados. | Hecho con ❤️ para nuestra comunidad.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
